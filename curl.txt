@@ -1,5 +1,5 @@
 
-curl -i -H "Content-Type: application/json" -d '{\"username\":\"user\",\"password\":\"user\"}' http://localhost:8080/rest_secured/login
+curl -i -H "Content-Type: application/json" -d '{\"username\":\"user\",\"password\":\"user\"}' http://localhost:8080/rest_secured/api/login
 
 
 curl -i -H "Content-Type: application/json" -H "X-AUTH-TOKEN: eyJpZCI6MTEsInVzZXJuYW1lIjoidXNlciIsImV4cGlyZXMiOjE0MjQ5NzEyMTQ2NDEsInJvbGVzIjpbIlVTRVIiXX0=.JoXytkWJZmuFNyHhk1TdEZU/g/Wb/SGSjjeshlPs1+Y=" -L http://localhost:8080/rest_secured/api/users/current
