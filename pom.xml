@@ -12,7 +12,7 @@
 		<spring.version>4.0.9.RELEASE</spring.version>
 		<spring.data.jpa.version>1.6.5.RELEASE</spring.data.jpa.version>
 		<spring-security.version>3.2.0.RELEASE</spring-security.version>
-		
+
 		<hibernate.version>4.3.5.Final</hibernate.version>
 		<jdk.version>1.7</jdk.version>
 	</properties>
@@ -87,7 +87,7 @@
 			<artifactId>hsqldb</artifactId>
 			<version>2.3.2</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -149,9 +149,9 @@
 			<version>1.9.13</version>
 		</dependency>
 		<dependency>
-		    <groupId>ch.qos.logback</groupId>
-		    <artifactId>logback-classic</artifactId>
-		    <version>1.0.13</version>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.0.13</version>
 		</dependency>
 
 
@@ -171,5 +171,15 @@
 		</dependency>
 	</dependencies>
 	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 </project>
